@@ -49,10 +49,9 @@ from sklearn.decomposition import PCA
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 42)
 
-pca = PCA(n_components=50)
-
-X_train = pca.fit_transform(X_train)
-X_test = pca.transform(X_test)
+#pca = PCA(n_components=50)
+#X_train = pca.fit_transform(X_train)
+#X_test = pca.transform(X_test)
 
 clf = LinearSVC()
 clf.fit(X_train, y_train)
